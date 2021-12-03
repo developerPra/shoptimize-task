@@ -26,6 +26,7 @@ $(document).ready(function () {
     $(".nav-icon").on("click", function () {
         $(".nav-menu").toggleClass("active");
         $(this).toggleClass("active");
+        $("body").toggleClass("overflow-hidden");
     })
 });
 
