@@ -1,0 +1,324 @@
+@media screen and (min-width: 768px) {
+  main #shoptimize-header {
+    padding: 15px 15px;
+    justify-content: space-around;
+  }
+  main #shoptimize-header .nav-icon {
+    display: block;
+    z-index: 9999;
+  }
+  main #shoptimize-header .nav-icon.active span {
+    background-color: #fff;
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(1) {
+    -webkit-transform: rotate(-132deg) translate(-8px, -12px);
+    transform: rotate(-140deg) translate(-8px, -15px);
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(2) {
+    width: 0px;
+    opacity: 0;
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(3) {
+    -webkit-transform: rotate(132deg) translate(-1.5px, 6px);
+    transform: rotate(132deg) translate(-1.5px, 6px);
+  }
+  main #shoptimize-header .nav-menu {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    padding: 5rem 0 0 0;
+    background-color: #214669;
+    z-index: 999;
+    text-align: center;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    transition: 0.5s ease all;
+  }
+  main #shoptimize-header .nav-menu.active {
+    left: 0;
+  }
+  main #shoptimize-header .nav-menu.active li {
+    line-height: 2;
+  }
+  main #shoptimize-header .nav-menu.active li a {
+    color: #fff;
+  }
+  main #shoptimize-header .nav-menu.active li.active a {
+    color: red !important;
+  }
+  main #shoptimize-header .nav-menu li {
+    margin: 1.5rem 0;
+  }
+  main #shoptimize-header .nav-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  main #shoptimize-header .user-actions li.profile-icon {
+    display: none;
+  }
+  main #products-lists-sidebar #sidebar {
+    margin-bottom: 1rem;
+  }
+  main #footer .wa-share,
+  main #footer .address-time {
+    display: none;
+  }
+  main #footer .contact-info {
+    flex-grow: 1;
+  }
+  main #footer .contact-info .contact-number,
+  main #footer .contact-info .contact-email {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main #shoptimize-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+  }
+  main #shoptimize-header .nav-icon {
+    position: relative;
+    display: none;
+    z-index: 100;
+  }
+  main #shoptimize-header .nav-icon span {
+    display: block;
+    margin: 0.5rem 0;
+    margin-left: auto;
+    height: 3px;
+    transition: 0.5s ease all;
+    border-radius: 4px;
+    background-color: #000;
+    width: 30px;
+  }
+  main #shoptimize-header nav {
+    display: flex;
+  }
+  main #shoptimize-header nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  main #shoptimize-header nav ul a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #212529;
+  }
+  main #shoptimize-header nav .nav-menu {
+    position: relative;
+    flex-direction: unset;
+    top: unset;
+    left: unset;
+    padding: unset;
+    background-color: unset;
+    text-align: unset;
+    height: unset;
+    min-height: unset;
+    width: unset;
+    transition: 0.5s ease all;
+  }
+  main #shoptimize-header nav .nav-menu li {
+    margin: 0 1rem;
+  }
+  main #shoptimize-header nav .nav-menu li a {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  main #shoptimize-header nav .nav-menu li.active a {
+    color: #214669;
+    font-weight: 500;
+  }
+  main #shoptimize-header nav .user-actions li {
+    margin: 0 0.75rem;
+  }
+  main #shoptimize-header nav .user-actions li a i {
+    font-size: 20px;
+  }
+  main #footer .address-time {
+    display: block;
+  }
+}
+@media screen and (min-width: 1224px) {
+  main #footer .wa-share {
+    display: grid;
+  }
+  main #footer .address-time {
+    display: block;
+  }
+  main #footer .contact-info {
+    flex-grow: unset;
+  }
+  main #footer .contact-info .contact-number,
+  main #footer .contact-info .contact-email {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main .custom-container {
+    padding: 20px 30px;
+  }
+  main #mobile-actions-only {
+    background-color: #fff;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main #mobile-actions-only button:nth-child(1) {
+    padding: 0.6rem 1.2rem;
+    text-transform: capitalize;
+    background-color: #fff;
+    color: #000;
+    border-radius: 22px;
+    font-size: 13px;
+    border: 1px solid #214669;
+  }
+  main #mobile-actions-only button:nth-child(2) {
+    padding: 0.6rem 1.2rem;
+    text-transform: capitalize;
+    background-color: #214669;
+    color: #fff;
+    border-radius: 22px;
+    font-size: 13px;
+  }
+  main #mobile-actions-only button {
+    width: 40%;
+    min-height: 3.2rem;
+    font-weight: bold;
+    font-size: 18px !important;
+    border-radius: 24px;
+  }
+  main #shoptimize-header {
+    padding: 15px 15px;
+  }
+  main #shoptimize-header .nav-icon {
+    display: block;
+    z-index: 9999;
+  }
+  main #shoptimize-header .nav-icon.active span {
+    background-color: #fff;
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(1) {
+    -webkit-transform: rotate(-132deg) translate(-8px, -12px);
+    transform: rotate(-140deg) translate(-8px, -15px);
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(2) {
+    width: 0px;
+    opacity: 0;
+  }
+  main #shoptimize-header .nav-icon.active span:nth-child(3) {
+    -webkit-transform: rotate(132deg) translate(-1.5px, 6px);
+    transform: rotate(132deg) translate(-1.5px, 6px);
+  }
+  main #shoptimize-header .nav-menu {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    padding: 5rem 0 0 0;
+    background-color: #214669;
+    z-index: 999;
+    text-align: center;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    transition: 0.5s ease all;
+  }
+  main #shoptimize-header .nav-menu.active {
+    left: 0;
+  }
+  main #shoptimize-header .nav-menu.active li {
+    line-height: 2;
+  }
+  main #shoptimize-header .nav-menu.active li a {
+    color: #fff;
+  }
+  main #shoptimize-header .nav-menu.active li.active a {
+    color: red !important;
+  }
+  main #shoptimize-header .nav-menu li {
+    margin: 1.5rem 0;
+  }
+  main #shoptimize-header .nav-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  main #shoptimize-header .user-actions li.profile-icon {
+    display: none;
+  }
+  main #products-lists-sidebar {
+    position: relative;
+  }
+  main #products-lists-sidebar #sidebar {
+    position: fixed;
+    display: none;
+  }
+  main #newsletter {
+    flex-wrap: wrap;
+  }
+  main #newsletter .newsletter-content {
+    margin-right: 1rem;
+  }
+  main #newsletter .newsletter-content h5 {
+    margin-bottom: 0.5rem;
+  }
+  main #newsletter form {
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  main #newsletter form input {
+    width: 100%;
+    min-width: 300px;
+  }
+  main #footer {
+    padding-bottom: 0px;
+  }
+  main #footer .wa-share,
+  main #footer .address-time {
+    display: none;
+  }
+  main #footer h6 {
+    display: flex;
+    justify-content: space-between;
+  }
+  main #footer h6 .plus-minus {
+    display: block;
+  }
+  main #footer .logo {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  main #footer .links,
+  main #footer .contact-info,
+  main #footer .follow-us {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6;
+  }
+  main #footer .contact-info .contact-us {
+    display: flex;
+  }
+  main #footer .follow-us {
+    padding: 0px;
+  }
+  main #footer .follow-us h6 {
+    display: none;
+  }
+  main #footer .follow-us ul {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  main #footer .follow-us ul li {
+    margin: 0 0.5rem;
+  }
+  main #footer-branding {
+    padding-top: 0px;
+    border-top: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

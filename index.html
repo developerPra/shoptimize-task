@@ -11,20 +11,711 @@
     <meta name="robots" content="noindex" />
     <title>Shoptimize Task - Ecommerce Site</title>
 
-    <!-- loading css files -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <!-- loading fonts & css files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
 </head>
 
 <body>
     <main>
-        <div class="prasad">
-            <div class="prasad-da pp">asdjkhfaksjhd</div>
+
+        <!-- top-header starts -->
+        <section id="top-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="column col-lg-4 d-none d-lg-block">
+
+                    </div>
+                    <div class="column col-lg-4">
+                        <div>Offer message goes here</div>
+                    </div>
+                    <div class="column col-lg-4 d-none d-lg-block">
+                        <ul>
+                            <li>Store Locator </li>
+                            <li>Track Order </li>
+                            <li>wishlist </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Currency INR
+                                        <span class="ml-1"><i class="far fa-chevron-down"></i></span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / top-header ends / -->
+
+        <!-- Header Starts -->
+        <header id="shoptimize-header" class="container-fluid">
+            <div class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                BRAND Logo
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Blog Articals</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="user-actions">
+                    <li class="search-icon"><a href="#"><i class="far fa-search"></i></a></li>
+                    <li class="profile-icon"><a href="#"><i class="fal fa-user-alt"></i></a></li>
+                    <li class="shoping-bag-icon"><a href="#"><i class="fal fa-shopping-bag"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- / Header Ends / -->
+
+
+        <!-- cover banner image starts -->
+        <section id="cover-banner">
+            <picture>
+                <source media="(max-width:767px)" srcset="https://picsum.photos/600/200">
+                <img src="https://picsum.photos/1600/400" alt="banner">
+            </picture>
+        </section>
+        <!-- / cover banner image ends / -->
+
+
+        <!-- breadcrumbs starts -->
+        <section id="bredcrumb" class="custom-container">
+            <span>Home</span>
+            <span class="active">Listing</span>
+        </section>
+        <!-- / breadcrumbs ends / -->
+
+        <!-- product listing + sidebar starts -->
+        <section id="products-lists-sidebar" class="custom-container">
+            <div class="row">
+                <!-- sidebar -->
+                <aside class="col-lg-3" id="sidebar">
+
+                    <div class="custom-accordion">
+                        <div class="custom-accordion-head">
+                            <h6>Filter By</h6>
+                        </div>
+                    </div>
+
+                    <div class="custom-accordion">
+                        <div class="custom-accordion-head active">
+                            <p>Category</p>
+                            <i class="far fa-angle-down custom-accordion-arrow arrow-animate"></i>
+                        </div>
+                        <div class="custom-accordion-content" style="display: block;">
+                            <ul>
+                                <li>Category 1</li>
+                                <li>Category 2</li>
+                                <li>Category 3</li>
+                                <li>Category 4</li>
+                                <li>Category 5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="custom-accordion">
+                        <div class="custom-accordion-head active">
+                            <p>Size</p>
+                            <i class="far fa-angle-down custom-accordion-arrow arrow-animate"></i>
+                        </div>
+                        <div class="custom-accordion-content" style="display: block;">
+                            <span class="badge">Size 1</span>
+                            <span class="badge">Size 2</span>
+                            <span class="badge">Size 3</span>
+                            <span class="badge">Size 4</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-accordion">
+                        <div class="custom-accordion-head">
+                            <p>Price</p>
+                            <i class="far fa-angle-down custom-accordion-arrow"></i>
+                        </div>
+                        <div class="custom-accordion-content">
+                            <div class="slider-track-outer">
+                                <div class="slider-track"></div>
+                                <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                                <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!-- products -->
+                <div class="col-lg-9 " id="products-listing">
+                    <div class="row sortby-outer">
+                        <div class="column col-12">
+                            <div class="sortby">
+                                <h6>Sort by :</h6>
+                                <div class="dropdown ml-2">
+                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Price
+                                        <span class="ml-5"><i class="far fa-chevron-down"></i></span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row products">
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <div class="product-card-header">
+                                    <img src="https://picsum.photos/200/230" alt="product photo">
+                                    <div class="wishlist-discount">
+                                        <div class="discount">50%</div>
+                                        <div class="wishlist"><i class="fal fa-heart"></i></div>
+                                    </div>
+                                    <div class="arrows">
+                                        <div></div>
+                                        <i class="fal fa-sort-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-card-body">
+                                    <p class="product-desc">product name goes here</p>
+                                    <div class="product-prices">
+                                        <h6 class="live-price">&#8377; 400.00</h6>
+                                        <h6 class="old-price">&#8377; 800.00</h6>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <div class="product-size active">8 UK</div>
+                                        <div class="product-size">9 UK</div>
+                                        <div class="product-size">10 UK</div>
+                                        <a class="size-more">+ more</a>
+                                    </div>
+                                    <div class="product-actions">
+                                        <div class="input-group inline-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-minus">
+                                                    <i class="fal fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <input class="form-control quantity" min="0" name="quantity" value="1"
+                                                type="number">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-plus">
+                                                    <i class="fal fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn add-cart">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- / product listing + sidebar starts / -->
+
+        <!-- newsletter section starts -->
+        <section id="newsletter">
+            <div class="newsletter-content">
+                <h5>Newsletter Subscription</h5>
+                <p>Sign up for tips, news and advoice!</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Please enter your Email">
+                <button class="btn submit-btn">Submit</button>
+            </form>
+        </section>
+        <!-- newsletter section ends -->
+
+        <!-- footer starts  -->
+        <footer id="footer" class="custom-container">
+            <div class="wa-share">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+
+            <div class="logo">
+                BRAND Logo
+            </div>
+
+
+            <div class="links">
+                <h6>
+                    <span>Quick Links</span>
+                    <span class="plus-minus"><i class="fal fa-minus"></i></span>
+                </h6>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Account </a></li>
+                    <li><a href="">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <h6>
+                    <span>Products</span>
+                    <span class="plus-minus"><i class="fal fa-minus"></i></span>
+                </h6>
+                <ul>
+                    <li><a href="">Product Category</a></li>
+                    <li><a href="">Product Category</a></li>
+                    <li><a href="">Product Category</a></li>
+                    <li><a href="">Product Category</a></li>
+                    <li><a href="">Product Category</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <h6>
+                    <span>Policies</span>
+                    <span class="plus-minus"><i class="fal fa-minus"></i></span>
+                </h6>
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Shopping Policy</a></li>
+                    <li><a href="">Return Policy</a></li>
+                    <li><a href="">Payment Policy </a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="address-time">
+                <address>
+                    <h6>Manufacture's Address</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </address>
+                <div class="time">
+                    <h6>Time of Operations</h6>
+                    <p>10am to 7pm from monday to saturay</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h6 class="contact-us">
+                    <span>Contact us</span>
+                    <span class="plus-minus"><i class="fal fa-minus"></i></span>
+                </h6>
+                <ul>
+                    <li>
+                        <h5 class="contact-number">Contact Number:
+                            <span><a href="tel:+91 7218520810">+91 7218520810</a></span>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5 class="contact-email">Customer Support Email:
+                            <span><a href="mailto:email@developerpra.com">email@developer.com</a></span>
+                        </h5>
+                    </li>
+                </ul>
+                <div class="follow-us">
+                    <h6>Follow Us</h6>
+                    <ul>
+                        <li><i class="fab fa-facebook-f" aria-hidden="true"></i></li>
+                        <li><i class="fab fa-youtube" aria-hidden="true"></i></li>
+                        <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fab fa-pinterest" aria-hidden="true"></i></li>
+                        <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <section id="footer-branding" class="custom-container">
+            <p>Copyright &copy; 2021 Client. All rights Reserved</p>
+            <p>Powered by Shoptimize</p>
+        </section>
+        <!-- / footer ends / -->
+        <!-- mobile only buttons -->
+        <div id="mobile-actions-only">
+            <button class="btn">Sort By </button>
+            <button class="btn">Filter</button>
         </div>
     </main>
     <!-- loading javscript files -->

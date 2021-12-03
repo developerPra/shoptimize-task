@@ -1,0 +1,25 @@
+.flexModule(@justify; @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.resetA(@clr) {
+    text-decoration: none;
+    cursor: pointer;
+    color: @clr;
+}
+
+.gridCenter() {
+    display: grid;
+    place-items: center;
+}
+
+.theme-btn(@theme-clr1; @clr) {
+    padding: 0.6rem 1.2rem;
+    text-transform: capitalize;
+    background-color: @theme-clr1;
+    color: @clr;
+    border-radius: 22px;
+    font-size: 13px;
+}
